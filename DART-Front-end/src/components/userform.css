@@ -1,0 +1,88 @@
+.form-container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.5s ease;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .step-label {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form-step {
+    animation: fadein 0.5s ease;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #902923 ;
+    margin-bottom: 25px;
+    box-sizing:content-box;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:#902923;
+    font-weight: bold;
+  }
+  .back-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .next-button, .submit-button {
+    padding: 10px 20px;
+    background-color:#902923;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    padding-left: 35px;
+  }
+  
+  .form-substep label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .form-substep input[type="file"] {
+    font-size: 0.9rem;
+  }
+  
+  .next-button:hover, .submit-button:hover {
+    background-color:#9f3c37;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

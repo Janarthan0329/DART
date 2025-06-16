@@ -1,0 +1,176 @@
+/* ========================================================================== 
+   Layout Container - centers whole component vertically and horizontally
+   ========================================================================== */
+.dart-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ========================================================================== 
+     Main Wrapper - horizontal split left and right panes with rounded corners
+     ========================================================================== */
+.dart-signup-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: 550px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.dart-left-pane,
+.dart-right-pane {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dart-right-pane {
+  background-color: rgb(144, 41, 35); /* solid red background */
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ========================================================================== 
+     Form Section inside Left Pane - centers content horizontally
+     ========================================================================== */
+.dart-form-section {
+  width: 100%;
+  max-width: 350px;
+  text-align: center; /* center text and inline elements */
+}
+
+/* === Typography === */
+.dart {
+  color: rgb(144, 41, 35);
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0.1rem 0 1rem;
+}
+
+.dart-subtext {
+  font-size: 0.9rem;
+  color: rgb(91, 30, 30);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.dart-form-section img {
+  margin-bottom: 1rem; /* Tightens logo-to-text spacing */
+}
+
+.dart {
+  font-size: 2rem;
+  margin: 2rem 0 0.8rem; /* Less space below “Signup” */
+}
+
+.account {
+  font-size: 3.5rem; /* Increased size */
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.dart-input-field {
+  border: 3px solid rgb(144, 41, 35);
+  margin-bottom: 0.8rem;
+  border-radius: 9px;
+  width: 100%;
+  max-width: 300px; /* Prevent full stretch */
+  display: flex;
+  align-items: center;
+}
+
+
+.dart-input-field input::placeholder {
+  color: rgb(144, 41, 35);
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-left: 20px;
+  margin-bottom: 0.8rem;
+}
+
+.dart-button-group {
+  display: flex;
+  justify-content: center; /* Center the button */
+  width: 100%;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+.dart-secondary-button {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  background: #a22c29;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dart-secondary-button:hover {
+  background-color: darkred;
+}
+.dart-right-pane .dart-button-group {
+  justify-content: center;
+  padding-left: 0;
+  width: 100%;
+}
+
+.button {
+  background-color: rgb(144, 41, 35);
+  border: none;
+  font-size: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkred;
+  size: 100px; /* Increase size on hover */
+  transition: all 0.3s ease;
+}
+
+/* ========================================================================== 
+     Login prompt inside right pane
+     ========================================================================== */
+.dart-login-prompt {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+/* DART logo image size */
+.dart-form-section img {
+  width: 150px !important; /* increase logo size */
+  height: auto;
+  margin-bottom: 0.2rem;
+}
+
+/* Signup heading */
+.dart {
+  color: rgb(144, 41, 35);
+  font-weight: 600;
+  font-size: 1.3rem; /* smaller font */
+  margin: 0.2rem 0 0.5rem;
+}
+
+
+.dart-icon {
+  width: 20px;
+  height: 15px;
+  color: rgb(144, 41, 35);
+  margin-right: 8px;
+}
+

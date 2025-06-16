@@ -1,0 +1,311 @@
+.dart-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    width: 100%;
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* ==========================================================================
+     Wrapper & Pane Layout
+     ========================================================================== */
+  .dart-signup-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    background-color:#902923(144, 41, 35);
+    border-radius: 10px;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .dart-left-pane,
+  .dart-right-pane {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .dart-left-pane {
+    background-color: white;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+  }
+  
+  .dart-right-pane {
+    background-color:#902923(144, 41, 35);
+    color: white;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* ==========================================================================
+     Form Section
+     ========================================================================== */
+  .dart-form-section {
+    width: 100%;
+    max-width: 340px;
+  }
+  
+  /* === Typography === */
+  .dart-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .dart {
+    color:#902923(144, 41, 35);
+    margin-top: -3rem;  
+  }
+  
+  .dart-subtext {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color:#902923(144, 41, 35);
+    line-height: 1.4;
+    text-align: center;
+  }
+  
+  .account {
+    color: #ffffff;
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ==========================================================================
+     Input Fields
+     ========================================================================== */
+  .dart-input-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.8rem;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    margin-bottom: 0.5rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .dart-input-field {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 0px;
+    flex: 1;
+    
+  }
+  
+  .dart-input-field:focus-within {
+    border-color: #902923(144, 41, 35);
+  }
+  
+  .dart-icon {
+    font-size: 1.5rem;
+    color:#902923(144, 41, 35);
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .dart-input-field input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #333;
+    padding: 0.5rem 0;
+  }
+  
+  .dart-input-field input::placeholder {
+    color:#902923(144, 41, 35);
+  }
+  
+  /* ==========================================================================
+     Remember Me & Forgot Password
+     ========================================================================== */
+  .remember-me {
+      display: flex;
+      align-items: center; 
+      gap: 8px; 
+      margin-top: 1rem; 
+      margin-left: 0; 
+  }
+  
+  .remember-me input[type="checkbox"] {
+      width: 16px; 
+      height: 16px;
+      cursor: pointer; 
+  }
+  
+  .remember-me label {
+      font-size: 0.9rem; 
+      color: #333; 
+      cursor: pointer; 
+  }
+  .signup-button{
+    font-size: 1.5rem;
+    color: #4f3c3c;
+  }
+  .dart-forgot-password {
+    text-align: right;
+    margin-top: -1.5rem;
+    padding: 0 1px 10px 0;
+    font-size: 0.9rem;
+  }
+  .dart-button-group {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dart-secondary-button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: auto;
+    text-align: center;
+    background-color: #902923(144, 41, 35);
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dart-secondary-button:hover {
+    background-color: #902923(144, 41, 35);
+  }
+  
+  .button {
+    background-color:#902923(144, 41, 35);
+    color: white;
+    font-size: 2rem;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #902923(144, 41, 35);
+  }
+  
+  /* ==========================================================================
+     OR Separator & Social Icons
+     ========================================================================== */
+  .dart-or-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .dart-or-separator::before,
+  .dart-or-separator::after {
+    content: '';
+    flex-grow: 1;
+    background-color: #ccc;
+    height: 1px;
+    margin: 0 1rem;
+  }
+  
+  .separator {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .google-icon,
+  .apple-icon {
+    font-size: 1.5rem;
+  }
+
+
+  /* ==========================================================================
+     Error modal 
+     ========================================================================== */
+  /* Modal Overlay */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  /* Modal Box */
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+
+  /* Modal Close Button */
+  .modal-close-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #902923;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .modal-close-button:hover {
+    background-color: #701d1d;
+  }
+  
+  /* ==========================================================================
+     Responsive Styles
+     ========================================================================== */
+  @media (max-width: 768px) {
+    .dart-signup-wrapper {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .dart-left-pane,
+    .dart-right-pane {
+      width: 100%;
+      padding: 30px;
+    }
+  
+    .dart-heading {
+      font-size: 1.75rem;
+    }
+  
+    .dart-forgot-password {
+      text-align: left;
+      margin-top: 1rem;
+    }
+  
+    .dart-button-group {
+      justify-content: center;
+      padding-left: 0;
+    }
+  
+    .dart-or-separator {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  

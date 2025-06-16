@@ -1,0 +1,35 @@
+/* Thank You page enhancements */
+.thank-you-message {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  
+  .thank-icon {
+    font-size: 60px;
+    color: #902923;
+    margin-bottom: 20px;
+  }
+  
+  .form-container.thank-you {
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .form-container.thank-you h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #902923;
+  }
+  
+  .form-container.thank-you p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
