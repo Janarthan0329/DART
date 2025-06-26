@@ -51,7 +51,7 @@ const HeroSection = () => {
           <div>
             <span>
               <img
-                src="src/assets/DART (2).png"
+                src="src/assets/images/DART (2).png"
                 alt="DART Logo"
                 style={{ width: "100px", height: "auto" }}
               />
@@ -116,7 +116,7 @@ const HeroSection = () => {
         <section className="right-section">
           <div className="">
             <img
-              src="images/1.png"
+              src="src/assets/images/HeroImg.png"
               alt=" "
               className="boq-image"
             />

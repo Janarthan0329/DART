@@ -107,7 +107,7 @@ const HeroSection = () => {
           <div className="dart-form-section">
             <center>
               <img
-                src="src/assets/DART (2).png"
+                src="src/assets/images/DART (2).png"
                 alt="DART Logo"
                 style={{ width: "100px", height: "auto" }}
               />
