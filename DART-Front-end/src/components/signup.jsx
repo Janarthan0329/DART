@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./signup.css";
 import { FaUser, FaEnvelope, FaLock, FaCheck } from "react-icons/fa";
+import logo from '../assets/images/Logo.png'; 
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -72,7 +73,7 @@ const Signup = () => {
           <div className="dart-form-section">
             <center>
               <img
-                src="src/assets/images/DART (2).png"
+                src={logo}
                 alt="DART Logo"
                 style={{ width: "100px", height: "auto" }}
               />

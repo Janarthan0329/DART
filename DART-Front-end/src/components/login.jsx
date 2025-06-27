@@ -7,6 +7,7 @@ import "./userform.css";
 import { FaUser, FaEnvelope, FaLock, FaCheck } from "react-icons/fa";
 import { GoogleLogin, googleLogout } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
+import logo from '../assets/images/Logo.png'; 
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -107,7 +108,7 @@ const HeroSection = () => {
           <div className="dart-form-section">
             <center>
               <img
-                src="src/assets/images/DART (2).png"
+                src={logo}
                 alt="DART Logo"
                 style={{ width: "100px", height: "auto" }}
               />

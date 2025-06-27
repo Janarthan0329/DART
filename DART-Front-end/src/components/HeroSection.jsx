@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./HeroSection.css";
 import { GrLanguage } from "react-icons/gr";
-
+import logo from '../assets/images/Logo.png';
+import HeroImg from '../assets/images/HeroImg.png'; 
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -51,7 +52,7 @@ const HeroSection = () => {
           <div>
             <span>
               <img
-                src="src/assets/images/DART (2).png"
+                src={logo}
                 alt="DART Logo"
                 style={{ width: "100px", height: "auto" }}
               />
@@ -116,7 +117,7 @@ const HeroSection = () => {
         <section className="right-section">
           <div className="">
             <img
-              src="src/assets/images/HeroImg.png"
+              src={HeroImg}
               alt=" "
               className="boq-image"
             />
